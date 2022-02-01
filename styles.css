@@ -3,6 +3,7 @@ h1 {
   color: red;
 }
 
+/** h1 is called the element selector, inside the {} are declarations, color is called the property, and red is the value **/
 p {
   color: green;
 }
@@ -14,6 +15,41 @@ li {
 li.special {
   list-style-type: none;
   color: orange;
-  font-weight: bold;
 }
   
+span.special {
+  color: blueviolet
+}
+
+.special {
+  font-weight: bold;
+}
+/** you can use the class of special many times as long as you specify which one 
+you are trying to target (span.special or li.special)
+and then you can modify all of the speical classes together by using the broad element selector of .special **/
+
+li em {
+  color: rebeccapurple;
+}
+
+a:link {
+  color: pink;
+  font-weight: bold;
+
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
+/**This will style any element with a class of special, which is inside a <p>,
+ which comes just after an <h1>, which is inside a <body>. Phew!**/
