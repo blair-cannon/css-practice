@@ -2,12 +2,15 @@
 h1 {
   color: red;
 }
+
 p {
   color: green;
 }
+
 li {
   list-style-type: square;
 }
+
 li.special {
   list-style-type: none;
   color: orange;
