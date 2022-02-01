@@ -8,3 +8,9 @@ p {
 li {
   list-style-type: square;
 }
+li.special {
+  list-style-type: none;
+  color: orange;
+  font-weight: bold;
+}
+  
